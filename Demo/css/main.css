@@ -114,6 +114,7 @@ body {
 .cart-header {
   display: grid;
   grid-template-columns: 2fr repeat(3, 3fr) 1fr;
+  column-gap: 30px;
   padding: 22px 0;
   background-color: #eaeff2;
   font-weight: 700;
