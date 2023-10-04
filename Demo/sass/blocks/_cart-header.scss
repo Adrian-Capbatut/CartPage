@@ -11,6 +11,14 @@
   line-height: 1.2;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+
+  @media (max-width: $mobile) {
+    height: 1px;
+    padding: 0;
+    & > * {
+      display: none;
+    }
+  }
 }
 
 .cart-header__title {

@@ -122,6 +122,12 @@ body {
   line-height: 1.2;
   letter-spacing: 0.2em;
   text-transform: uppercase; }
+  @media (max-width: 600px) {
+    .cart-header {
+      height: 1px;
+      padding: 0; }
+      .cart-header > * {
+        display: none; } }
 
 .cart-header__title {
   grid-column-start: 2; }
