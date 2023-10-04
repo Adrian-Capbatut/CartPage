@@ -141,9 +141,17 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.2; }
+  @media (max-width: 600px) {
+    .cart-footer {
+      padding-left: 15px;
+      padding-right: 15px;
+      grid-template-columns: 1fr 1fr; } }
 
 .cart-footer__count {
   grid-column-start: 2; }
+  @media (max-width: 600px) {
+    .cart-footer__count {
+      grid-column-start: 1; } }
 
 .product {
   display: grid;

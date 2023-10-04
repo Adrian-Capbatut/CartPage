@@ -9,8 +9,18 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 1.2;
+
+  @media (max-width: $mobile) {
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .cart-footer__count {
   grid-column-start: 2;
+
+  @media (max-width: $mobile) {
+    grid-column-start: 1;
+  }
 }
