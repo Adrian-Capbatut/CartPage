@@ -1,6 +1,6 @@
 const cart = [
     {
-        id: 0,
+        id: 1,
         img: 'iPhone-13.jpg',
         title: 'Apple iPhone 15 Plus 256 GB Yellow',
         count: 1,
@@ -8,7 +8,7 @@ const cart = [
         priceTotal: 500,
     },
     {
-        id: 1,
+        id: 2,
         img: 'macbook.jpg',
         title: 'Apple MacBook Air 15 2023 Space Gray',
         count: 1,
@@ -16,7 +16,7 @@ const cart = [
         priceTotal: 1299,
     },
     {
-        id: 2,
+        id: 3,
         img: 'watch.jpg',
         title: 'Apple Watch SE (2022) Silver',
         count: 1,
