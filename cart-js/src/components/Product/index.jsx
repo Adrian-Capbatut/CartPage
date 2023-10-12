@@ -2,8 +2,13 @@ import ButtonDelete from "../ButtonDelete";
 import Count from "../Count";
 import "./styles.scss";
 
-const Product = ({ product }) => {
+// <<<<<<< HEAD
+// const Product = ({ product }) => {
+// const {img,title,priceTotal,count, id} = product
+
+const Product = ({ product, deleteProduct,increase, decrease }) => {
 const {img,title,priceTotal,count, id} = product
+// >>>>>>> delete-items
 
   return (
     <section className="product">
