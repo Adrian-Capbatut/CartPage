@@ -43,6 +43,21 @@ const Cart = () => {
     setCart((cart) => cart.filter((product) => id !== product.id));
   };
 
+  const changesValue = (id, value) => {
+    setCart((cart) => {
+      return cart.map((product) => {
+        if (product.id === id) {
+          return {
+            ...product,
+            count: value,
+            priceTotal: value * product.price,
+          };
+        }
+        return product;
+      });
+    });
+  };
+
   const products = cart.map((product) => {
     return (
       <Product
@@ -51,6 +66,7 @@ const Cart = () => {
         increase={increase}
         decrease={decrease}
         deleteProduct={deleteProduct}
+        changeValue={changesValue}
       />
     );
   });
